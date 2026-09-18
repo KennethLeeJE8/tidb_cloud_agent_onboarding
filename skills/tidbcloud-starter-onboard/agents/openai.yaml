@@ -1,0 +1,4 @@
+interface:
+  display_name: "TiDB Cloud Onboarding"
+  short_description: "Verify OAuth and usable TiDB Cloud access"
+  default_prompt: "Use $tidbcloud-starter-onboarding to authenticate TiDB Cloud and verify my account access."
