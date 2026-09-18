@@ -10,7 +10,7 @@ Authenticate the user and list the TiDB Cloud projects the coding agent can acce
 ## Guardrails
 
 - Do not request or reveal passwords, MFA codes, OAuth tokens, API private keys, SQL credentials, or connection strings.
-- Leave browser identity work—sign-up, sign-in, email verification, CAPTCHA, MFA, billing, and consent—to the user.
+- Leave browser identity work—sign-up, sign-in, email verification, CAPTCHA, MFA, billing, and consent—to the user. For a first-time sign-up, explicitly instruct the user to verify their email, then rerun this onboarding skill to complete CLI authentication.
 - Do not use `ticloud config create` unless the user explicitly requests setup of an existing API-key pair. OAuth is the default for interactive use.
 - Do not claim authentication is complete unless both `ticloud version` and `ticloud auth whoami` succeed.
 
